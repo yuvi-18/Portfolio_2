@@ -21,6 +21,9 @@
     --fs-h2:2.25rem;
     --fs-h3:1.25rem;
     --fs-body:1rem;
+
+    --bs: .25em .25em .75em rgba(0,0,0, .25 ),
+           .125em .125em .25em rgb(0,0,0,.15);
 }
 
 
@@ -37,6 +40,7 @@
 
 /* min width se tab tak apply hoga property jab tak min width se screen badi hai  */
 /* media query uss propeerty ke baad aani chaiye jisko modify kar rahe, in this case it is font size */
+/* design for 300 and up, 600 and up, 900 and up in media quaries */
 
 /* general styles */
 
@@ -47,6 +51,10 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+}
+
+section{
+    padding: 5em 2em;
 }
 
 img {
@@ -91,4 +99,57 @@ h3{ font-size: var(--fs-h3); }
 .section__subtitle--about{
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    padding: .25em .5em;
+    margin-bottom: 1em;
+}
+
+/* main website ka code  */
+
+/* header */
+
+nav { display: none;}
+
+
+/* intro section */
+
+.intro {
+    position: relative;
+}
+
+.intro__img {
+    box-shadow: var(--bs);
+}
+
+.section__subtitle--intro{
+    display: inline-block;
+}
+
+@media (min-width:600px) {
+    .intro{
+        display: grid;
+        column-gap: 1em;
+        width: min-content;
+        margin: 0 auto;
+        grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }    
+
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section__subtitle--intro{
+        align-self: self-start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
 }
