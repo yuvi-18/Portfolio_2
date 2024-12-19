@@ -1,0 +1,8 @@
+    /* font-family: "Source Code Pro", serif; */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
