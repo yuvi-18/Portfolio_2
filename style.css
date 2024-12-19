@@ -1,8 +1,40 @@
-    /* font-family: "Source Code Pro", serif; */
+/* custom properties (best practices) */
 
 *,
 *::before,
 *::after{
     box-sizing: border-box;
 }
+
+:root{
+    --ff-primary:"Source Sans 3", serif;
+    --ff-secondary:"Source Code Pro", serif;
+
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light:#fff;
+    --clr-dark:#303030;
+    --clr-accent:#16e0bd;
+
+    --fs-h1:3rem;
+    --fs-h2:2.25rem;
+    --fs-h3:1.25rem;
+    --fs-body:1rem;
+}
+
+
+
+@media (min-width: 800px) {
+    :root{
+        --fs-h1:4.5rem;
+        --fs-h2:3.75rem;
+        --fs-h3:1.5rem;
+        --fs-body:1.125rem;
+    }
+}
+
+
+/* min width se tab tak apply hoga property jab tak min width se screen badi hai  */
+/* media query uss propeerty ke baad aani chaiye jisko modify kar rahe, in this case it is font size */
 
