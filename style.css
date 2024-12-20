@@ -47,6 +47,7 @@
 /* + combinator se the elements having a sibling will get the property only */
 /* display inline block is useful to retain block level properties like height and widht while making the element inline. */
 /* :focus applies to an element when it is focused, such as when an input field, button, or link is selected (clicked or navigated to using the keyboard, typically with the Tab key). */
+/* The min-content keyword in CSS is used to specify the minimum width that an element can take based on its content. When applied to the width property, min-content tells the browser to make the element as narrow as possible while still ensuring that its content fits without overflowing or being cut off. */
 
 
 /* general styles */
