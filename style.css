@@ -41,6 +41,9 @@
 /* min width se tab tak apply hoga property jab tak min width se screen badi hai  */
 /* media query uss propeerty ke baad aani chaiye jisko modify kar rahe, in this case it is font size */
 /* design for 300 and up, 600 and up, 900 and up in media quaries */
+/* set a background colour always with a background image (For Backup) */
+/* pseudo elements will not display any visible thing without getting content */
+
 
 /* general styles */
 
@@ -152,4 +155,24 @@ nav { display: none;}
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+}
+
+
+/* my services section */
+
+.myServices {
+    background: var(--clr-dark);
+    background-image: url(assests/bg_service.png);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services{
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after{
+
 }
