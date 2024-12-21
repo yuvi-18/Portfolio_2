@@ -196,6 +196,12 @@ header{
     padding: 0;
 }
 
+@media (max-width:800px) {
+    .nav__list{
+        height: 55%;
+    }
+}
+
 .nav__link{
     color: inherit;
     font-weight: var(--fw-bold);
